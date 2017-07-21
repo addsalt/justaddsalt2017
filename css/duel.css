@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'atc_duelv4_sharp';
+    src: url('../fonts/atcduel-v4sharp-webfont.eot');
+    src: url('../fonts/atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atcduel-v4sharp-webfont.woff2') format('woff2'),
+         url('../fonts/atcduel-v4sharp-webfont.woff') format('woff'),
+         url('../fonts/atcduel-v4sharp-webfont.ttf') format('truetype'),
+         url('../fonts/atcduel-v4sharp-webfont.svg#atc_duelv4_sharp') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'atc_duelv6_sharp';
+    src: url('../fonts/atcduel-v6sharp-webfont.eot');
+    src: url('../fonts/atcduel-v6sharp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atcduel-v6sharp-webfont.woff2') format('woff2'),
+         url('../fonts/atcduel-v6sharp-webfont.woff') format('woff'),
+         url('../fonts/atcduel-v6sharp-webfont.ttf') format('truetype'),
+         url('../fonts/atcduel-v6sharp-webfont.svg#atc_duelv6_sharp') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'atc_duelv8_sharp';
+    src: url('../fonts/atcduel-v8sharp-webfont.eot');
+    src: url('../fonts/atcduel-v8sharp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atcduel-v8sharp-webfont.woff2') format('woff2'),
+         url('../fonts/atcduel-v8sharp-webfont.woff') format('woff'),
+         url('../fonts/atcduel-v8sharp-webfont.ttf') format('truetype'),
+         url('../fonts/atcduel-v8sharp-webfont.svg#atc_duelv8_sharp') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'atc_duelv10_sharp';
+    src: url('../fonts/atcduel-v10sharp-webfont.eot');
+    src: url('../fonts/atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atcduel-v10sharp-webfont.woff2') format('woff2'),
+         url('../fonts/atcduel-v10sharp-webfont.woff') format('woff'),
+         url('../fonts/atcduel-v10sharp-webfont.ttf') format('truetype'),
+         url('../fonts/atcduel-v10sharp-webfont.svg#atc_duelv10_sharp') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'atc_duelv12_sharp';
+    src: url('../fonts/atcduel-v12sharp-webfont.eot');
+    src: url('../fonts/atcduel-v12sharp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atcduel-v12sharp-webfont.woff2') format('woff2'),
+         url('../fonts/atcduel-v12sharp-webfont.woff') format('woff'),
+         url('../fonts/atcduel-v12sharp-webfont.ttf') format('truetype'),
+         url('../fonts/atcduel-v12sharp-webfont.svg#atc_duelv12_sharp') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}

@@ -37,7 +37,7 @@ nav ul li a em {display: block;}
 
 p {margin-bottom: 1.3em;}
 h1, h2, h3, h4, .xl {margin: 1.414em 0 0.5em;font-weight: 700;line-height: .9;}
-.xl {font-size: 9.4vw;}
+.xl {font-size: 9.4vw; margin: 3rem 0;}
 h1, .uno {margin-top: 0; font-size: 1.602em; letter-spacing: -0.05em;}
 h2, .dos {font-size: 1.424em;}
 h3, .tres {font-size: 1.266em; letter-spacing: -0.015em;}
@@ -54,33 +54,28 @@ img {display: block;width: 100%;margin: 0 auto;}
 
 .logo {max-width: 5.5rem; margin: 0;}
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
+nav {margin-bottom: 2rem;}
+nav ul {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
 nav ul li a {text-decoration: none; line-height: .75; color: #181817;}
 
 
 .hidden-title {position: absolute; top: -100%; left: -100%;}
 
 #projects {margin-top: 1rem;}
-.project {margin-bottom: 2rem;}
-.project h3 {margin-top: 1rem; margin-bottom: 0; display: inline-block;}
-.project p {display: inline-block; margin-bottom: 0;}
+.project {margin-bottom: 2%;}
+.project h3 {margin-top: .5rem; margin-bottom: 0; display: inline-block;}
+.project p {display: inline-block; margin-top: .5rem; margin-bottom: 0;}
 
 
 @media only screen and (min-width: 40em) {
-    .third {width: 40.714285713%; float: left;}
-    .two-thirds {width: 54.285714284%;  float: left; display: block;}
+    .third {width: 42%; float: left;}
+    .two-thirds {width: 56%;  float: left; display: block;}
 
-    .left {margin-right: 2.5%;}
-    .right {margin-left: 2.5%;}
+    .left {margin-right: 1%;}
+    .right {margin-left: 1%;}
 }
 
-
+/*
 @media only screen and (min-width: 60em) {
     
     body {
@@ -98,3 +93,4 @@ nav ul li a {text-decoration: none; line-height: .75; color: #181817;}
         width: 90vh;
     }
 }
+*/

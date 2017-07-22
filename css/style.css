@@ -38,11 +38,13 @@ nav ul li a em {display: block;}
 
 p {margin-bottom: 1.3em;}
 h1, h2, h3, h4, .xl {margin: 1.414em 0 0.5em;font-weight: 700;line-height: .9;}
+
 .xl {font-size: 9.4vw; margin: 3rem 0;}
-h1, .uno {margin-top: 0; font-size: 1.602em; letter-spacing: -0.025em;}
-h2, .dos {font-size: 1.424em;}
-h3, .tres {font-size: 1.266em; letter-spacing: -0.015em;}
-h4, .cuatro {font-size: 1.125em;}
+.lrg {font-size: 3.8140625em; line-height: 1.1;}
+h1, .uno {margin-top: 0; font-size: 2.441em; letter-spacing: -0.025em;}
+h2, .dos {font-size: 1.953em;}
+h3, .tres {font-size: 1.563em; letter-spacing: -0.015em;}
+h4, .cuatro {font-size: 1.25em;}
 .reg {font-size: 1em;}
 small, .small {font-size: 0.889em;}
 
@@ -71,6 +73,7 @@ a {text-decoration: none; color: #181817;}
 .project h3 {margin-top: .5rem; margin-bottom: 0; display: inline-block;}
 .project p {display: inline-block; margin-top: .5rem; margin-bottom: 0;}
 
+.intro {margin-top: 10rem;}
 
 @media only screen and (min-width: 40em) {
     .third {width: 42%; float: left;}
@@ -80,7 +83,7 @@ a {text-decoration: none; color: #181817;}
     .right {margin-left: 1%;}
 }
 
-
+/*
 @media only screen and (min-width: 80em) {
     
     body {
@@ -114,3 +117,4 @@ a {text-decoration: none; color: #181817;}
     nav ul li:nth-child(5) {order: 2}
     nav ul li:nth-child(6) {order: 1}*/
 }
+*/

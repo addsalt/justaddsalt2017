@@ -1,4 +1,4 @@
-/* BASIC */
+/* General */
 
 *, *:after, *:before, html, body {
     margin: 0;
@@ -24,6 +24,15 @@ body {
     text-rendering: optimizeLegibility; font-feature-settings: "kern"; -webkit-font-feature-settings: "kern"; -moz-font-feature-settings: "kern"; -moz-font-feature-settings: "kern=1"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);  
 }
 
+ul {list-style-type: none;}
+img {display: block;width: 100%;margin: 0 auto;}
+a {color: #181817; text-decoration: none;}
+
+.underline-link {border-bottom: solid .073em black;}
+.hidden-title {position: absolute; top: -100%; left: -100%;}
+
+/* Typography */
+
 .questa {font-family: '2-Questa_Sans_Regular', "nimbus-sans", Nimbus Sans, Helvetica, Arial, sans-serif;}
 .duel {text-transform: uppercase;}
 .duel-v4 {font-family: 'atc_duelv4_sharp', Nimbus Sans, Helvetica, Arial, sans-serif;}
@@ -31,90 +40,101 @@ body {
 .duel-v12, .duel-v4 em {font-family: 'atc_duelv12_sharp', Nimbus Sans, Helvetica, Arial, sans-serif;}
 .v4-underline {display: inline-block; font-size: 75%; position: relative; transform: translateY(-24.5%);}
 .v4-underline:after {content: ''; display: block; width: 100%; height: .145em; background-color:#181817;}
-
-nav ul li a em {display: block;}
-
 .nimbus {font-family: "nimbus-sans", Nimbus Sans, Helvetica, Arial, sans-serif;}
 
-p {margin-bottom: 1.3em;}
 h1, h2, h3, h4, .xl {margin: 1.414em 0 0.5em;font-weight: 700;line-height: .9;}
-
 .xl {font-size: 9.4vw; margin: 3rem 0;}
-.lrg {font-size: 3.8140625em; line-height: 1.1;}
-h1, .uno {margin-top: 0; font-size: 2.441em; letter-spacing: -0.025em;}
-h2, .dos {font-size: 1.953em;}
+h1, .uno {font-size: 4em; line-height: 1.1; letter-spacing: -0.025em; margin-top: 0; }
+h2, .dos {font-size: 2em;}
 h3, .tres {font-size: 1.563em; letter-spacing: -0.015em;}
 h4, .cuatro {font-size: 1.25em;}
+p {margin-bottom: 1.3em;}
 .reg {font-size: 1em;}
-small, .small {font-size: 0.889em;}
+small, .small {font-size: 0.75em;}
 
+/* Spacing */
+.section-top {margin-top: 9rem;}
 .no-m-t {margin-top: 0;}
 .no-m-b {margin-bottom: 0;}
 
-ul {list-style-type: none;}
-img {display: block;width: 100%;margin: 0 auto;}
+/* Homepage Styles */
 
+.intro {margin-top: 10rem; max-width: 75rem;}
 
-.logo {max-width: 5.5rem; margin: 0;}
+.inline-gif {display: inline-block !important; width: 6rem;}
 
-nav {margin-bottom: 2rem;}
-nav ul {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;}
-nav ul li a {text-decoration: none; line-height: .75; color: #181817;}
-a {text-decoration: none; color: #181817;}
-
-.instagram-item {height: 1.8rem; width: 1.8rem; overflow: hidden;}
-.ig-icon {display: inline-block;height: 1.6rem; width: 1.6rem; margin-top: 3px;}
-
-
-.hidden-title {position: absolute; top: -100%; left: -100%;}
-
-#projects {margin-top: 1rem;}
-.project {margin-bottom: 2%;}
-.project h3 {margin-top: .5rem; margin-bottom: 0; display: inline-block;}
+.project {margin-bottom: 3.25%;}
+.project h3 {margin-top: .5rem; margin-bottom: 0; display: inline-block; letter-spacing: 0.03em;}
 .project p {display: inline-block; margin-top: .5rem; margin-bottom: 0;}
 
-.intro {margin-top: 10rem;}
-
 @media only screen and (min-width: 40em) {
-    .third {width: 42%; float: left;}
-    .two-thirds {width: 56%;  float: left; display: block;}
+    .one-third {width: 41%; float: left;}
+    .two-thirds {width: 55%;  float: left; display: block;}
 
-    .left {margin-right: 1%;}
-    .right {margin-left: 1%;}
+    .margin-on-right {margin-right: 2%;}
+    .margin-on-left {margin-left: 2%;}
 }
 
-/*
-@media only screen and (min-width: 80em) {
+.project-meta {margin-top: .3rem; line-height: 1;}
+.project-meta p {display: inline-block; margin-left: 0.175em;}
+
+/* Nav Styles */
+
+.logo {height: 1.45rem; }
+.instagram-icon {height: 1.2rem; width: 1.2rem; transform: translateY(0.3em); margin-left: 0.1em;}
+
+.main-nav-links {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.main-nav-links a:first-child {
+    margin: 0 1.75em 0 1.75em;
+}
+
+.main-nav-links a {
+    display: inline-block;
+    margin: 0 1.75em 0 0;
+    padding: .5em 0 .5em;
+}
+
+@media only screen and (max-width: 43em) {
+    .main-nav-links {
+        font-size: 0.5em;
+    }
+    
+    .main-nav-links em {display: block;}
+    
+    
+}
+
+@media only screen and (min-width: 70em) {
+    
+    .main-nav {position: fixed; top: 0; left: 0; z-index: 10; white-space: nowrap; line-height: 1;}
+    
+    .main-nav-links {
+        margin-bottom: -1em;
+        margin-top: 0;
+    }
+    
+    .main-nav-links a, .main-nav-links a:first-child {
+        display: inline-block;
+        margin: 0 0 0 1.75em;
+        padding: .5em 0 1em;
+    }
+
+    .main-nav-inner {
+        margin-left: 5%; 
+        margin-top: .5%; 
+        -ms-transform-origin: bottom left; 
+        transform-origin: bottom left; 
+        -ms-transform: rotate(90deg); 
+        transform: rotate(90deg);
+    }
     
     body {
         padding-left: 10%;
         padding-top: 0;
-        padding-right: 2.1%;
+        padding-right: 4%;
     }
-    
-    nav ul {
-        position: fixed;
-        top: 3.8%;
-        left: 1.8%;
-    }
-    
-    nav ul {height: 90vh; flex-direction: column; justify-content: space-between;}
-    
-    .logo-item {
-        -webkit-transform: rotate(0deg);
-        transform-origin: 0% 0%;
-    }
-    
-    nav ul li {
-        transform: translate(0,100%) rotate(-90deg);
-        transform-origin: 0 0;
-    }
-    
-    /*nav ul li:nth-child(1) {order: 6}
-    nav ul li:nth-child(2) {order: 5}
-    nav ul li:nth-child(3) {order: 4}
-    nav ul li:nth-child(4) {order: 3}
-    nav ul li:nth-child(5) {order: 2}
-    nav ul li:nth-child(6) {order: 1}*/
 }
-*/

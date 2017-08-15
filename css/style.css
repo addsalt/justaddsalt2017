@@ -45,7 +45,7 @@ a {color: #181817; text-decoration: none;}
 h1, h2, h3, h4, .xl {margin: 1.414em 0 0.5em;font-weight: 700;line-height: .9;}
 .xl {font-size: 9.4vw; margin: 3rem 0;}
 h1, .uno {font-size: 4em; line-height: 1.1; letter-spacing: -0.025em; margin-top: 0; }
-h2, .dos {font-size: 2em;}
+h2, .dos {font-size: 2em; line-height: 1.1}
 h3, .tres {font-size: 1.563em; letter-spacing: -0.015em;}
 h4, .cuatro {font-size: 1.25em;}
 p {margin-bottom: 1.3em;}
@@ -70,6 +70,8 @@ small, .small {font-size: 0.75em;}
 @media only screen and (min-width: 40em) {
     .one-third {width: 41%; float: left;}
     .two-thirds {width: 55%;  float: left; display: block;}
+    
+    .one-half {width: 48%; float: left;}
 
     .margin-on-right {margin-right: 2%;}
     .margin-on-left {margin-left: 2%;}
@@ -77,6 +79,7 @@ small, .small {font-size: 0.75em;}
 
 .project-meta {margin-top: .3rem; line-height: 1;}
 .project-meta p {display: inline-block; margin-left: 0.175em;}
+.project-meta h3 {font-size: .96em;}
 
 /* Nav Styles */
 
@@ -140,3 +143,55 @@ small, .small {font-size: 0.75em;}
 }
 
 .row {overflow: auto;}
+
+/*.animate-text {min-height: 10rem; background-color: yellow; text-align: center;}
+.animate-text ul {
+    display: flex;
+    align-items: center;
+}*/
+
+.animate-text {min-height: 10rem; background-color: yellow; text-align: center; position: relative;}
+.animate-text ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animate-text ul li {
+    position: absolute;
+    top: 25%;
+    animation: fade-in-out 800ms;
+    animation-delay: 0;
+    opacity: 0;
+    display: block;
+    padding: 10rem 0;
+}
+
+.animate-text ul li:nth-child(1) {
+    color: red !important;
+    animation-delay: 0;
+}
+
+.animate-text ul li:nth-child(2) {
+    color: lawngreen !important;
+    animation-delay: 800ms;
+}
+
+.animate-text ul li:nth-child(3) {
+    animation-delay: 1600ms;
+}
+
+.animate-text ul li:nth-child(4) {
+    animation-delay: 2400ms;
+}
+
+.animate-text ul li:nth-child(5) {
+    animation-delay: 3200ms;
+}
+
+@keyframes fade-in-out {
+    0% {opacity: 0;}
+    15% {opacity: 1}
+    85% {opacity: 1}
+    100% {opacity: 0;}
+}
